@@ -173,7 +173,7 @@ figure { margin: 0; }
 .visit { padding-block: var(--section-pad); }
 .type-moment {
   margin-top: 16px;
-  font: 700 clamp(44px, 7.5vw, 104px)/1.02 var(--font-display); letter-spacing: -0.02em;
+  font: 700 clamp(38px, 7vw, 96px)/1.02 var(--font-display); letter-spacing: -0.02em;
 }
 .type-moment a {
   text-decoration: none; color: var(--blue);
@@ -181,6 +181,16 @@ figure { margin: 0; }
   transition: background-size .35s var(--ease);
 }
 .type-moment a:hover { background-size: 100% .14em; }
+.type-moment__local {
+  display: inline-block; white-space: nowrap; vertical-align: .32em;
+  margin-left: .35em; padding: .3em .8em;
+  font-size: .3em; line-height: 1; letter-spacing: .02em;
+  color: var(--ink); background: var(--yellow);
+  border: 3px solid var(--ink); border-radius: 999px; box-shadow: var(--shadow-sm);
+}
+@media (max-width: 767px) {
+  .type-moment__local { display: table; margin: 12px 0 0; font-size: 16px; vertical-align: baseline; }
+}
 .visit__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
 .card {
   background: var(--white); border: 3px solid var(--ink); border-radius: var(--radius-lg);
