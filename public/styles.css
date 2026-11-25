@@ -272,7 +272,7 @@ figure { margin: 0; }
 /* ---------- Responsive ---------- */
 @media (max-width: 1023px) {
   .nav__links { gap: 20px; }
-  .nav__links a:last-child { display: none; }
+  .nav__links a:first-child { display: none; }
   .tiles { grid-template-columns: 1fr 1fr; }
   .tiles .tile:last-child { grid-column: 1 / -1; }
 }
