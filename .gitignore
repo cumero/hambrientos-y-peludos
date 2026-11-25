@@ -12,4 +12,4 @@ Assets/*.ai
 Assets/*.pdf
 
 # Material de marcas de terceros (solo en local hasta aprobarlo)
-marcas/
+/marcas/

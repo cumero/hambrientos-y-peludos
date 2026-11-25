@@ -352,3 +352,25 @@ figure { margin: 0; }
 }
 .visit__map img { display: block; width: 100%; height: auto; }
 .visit__map:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--ink); }
+
+/* ---------- Marcas ---------- */
+.brands { padding-block: var(--section-pad); border-bottom: 3px solid var(--ink); }
+.brands__grid { --cols: 6; --gap: 16px; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--gap); margin-top: 48px; }
+.brand-tile {
+  width: calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  display: flex; align-items: center; justify-content: center; height: 112px; padding: 14px;
+  background: var(--white); border: 3px solid var(--ink); border-radius: var(--radius); box-shadow: var(--shadow-sm);
+}
+.brand-tile img { width: 100%; height: 100%; object-fit: contain; }
+.brand-tile--dark { background: var(--ink); }
+.brand-tile--text { font: 700 22px/1.15 var(--font-display); color: var(--blue); text-align: center; }
+@media (max-width: 1023px) { .brands__grid { --cols: 4; } }
+@media (max-width: 767px) {
+  .brands__grid { --cols: 3; --gap: 10px; margin-top: 32px; }
+  .brand-tile { height: 76px; padding: 8px; border-width: 2px; border-radius: 16px; box-shadow: 3px 3px 0 var(--ink); }
+  .brand-tile--text { font-size: 15px; }
+}
+.brand-tile--photo { padding: 0; overflow: hidden; background: var(--ink); }
+.brand-tile--photo img { object-fit: contain; }
+.brand-tile--native { background: #b4ce91; }
+.brand-tile--ocean { background: #3e6a91; }
