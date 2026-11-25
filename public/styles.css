@@ -258,7 +258,7 @@ figure { margin: 0; }
   padding: 16px 0; border-bottom: 2px solid var(--ink); font-weight: 700; font-size: 18px;
 }
 .services .muted { font-weight: 400; font-size: 16px; }
-.groom__copy .link { margin-top: 24px; }
+.groom__copy .btn { margin-top: 32px; }
 
 .steps { display: grid; gap: 20px; counter-reset: s; }
 .steps li {
@@ -326,7 +326,7 @@ figure { margin: 0; }
   .visit__card .btn { width: 100%; }
   .tiles { grid-template-columns: 1fr; }
   .tile { padding: 24px; }
-  .close .btn { width: 100%; }
+  .close .btn, .groom__copy .btn { width: 100%; }
 
   .actionbar {
     display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
