@@ -10,3 +10,6 @@ Thumbs.db
 # Archivos fuente de marca (solo en local)
 Assets/*.ai
 Assets/*.pdf
+
+# Material de marcas de terceros (solo en local hasta aprobarlo)
+marcas/
