@@ -374,6 +374,8 @@ figure { margin: 0; }
 .brand-tile--photo img { object-fit: contain; }
 .brand-tile--native { background: #b4ce91; }
 .brand-tile--ocean { background: #3e6a91; }
+.brand-tile--petsana { background: #3f7f3a; }
+.brand-tile--diptron { background: #2c75be; }
 
 /* ---------- Juguetes, collares y correas ---------- */
 .extras {
