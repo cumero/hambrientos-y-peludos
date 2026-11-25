@@ -2,13 +2,13 @@
 (() => {
   // Horario real (0 = domingo … 6 = sábado), en minutos desde medianoche.
   const HOURS = {
-    0: [[630, 810]],
-    1: [[600, 810], [1050, 1200]],
-    2: [[600, 810], [1050, 1200]],
-    3: [[600, 810], [1050, 1200]],
-    4: [[600, 810], [1050, 1200]],
-    5: [[600, 810], [1050, 1200]],
-    6: [[630, 810]],
+    0: [],
+    1: [[600, 840], [1020, 1200]],
+    2: [[600, 840], [1020, 1200]],
+    3: [[600, 840], [1020, 1200]],
+    4: [[600, 840], [1020, 1200]],
+    5: [[600, 840], [1020, 1200]],
+    6: [[600, 840]],
   };
   const DAY_NAMES = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
   const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
@@ -29,8 +29,10 @@
     if (open) return { open: true, day, text: `Abierto ahora · hasta las ${fmt(open[1])}` };
     const later = HOURS[day].find(([a]) => mins < a);
     if (later) return { open: false, day, text: `Cerrado ahora · abrimos a las ${fmt(later[0])}` };
-    const next = (day + 1) % 7;
-    return { open: false, day, text: `Cerrado ahora · mañana ${DAY_NAMES[next]} desde las ${fmt(HOURS[next][0][0])}` };
+    let next = (day + 1) % 7;
+    while (!HOURS[next].length) next = (next + 1) % 7;
+    const when = next === (day + 1) % 7 ? "mañana" : "el";
+    return { open: false, day, text: `Cerrado ahora · abrimos ${when} ${DAY_NAMES[next]} a las ${fmt(HOURS[next][0][0])}` };
   }
 
   function paint() {
