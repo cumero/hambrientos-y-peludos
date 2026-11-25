@@ -25,7 +25,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/fredoka-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/nunito-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=20261125i">
+  <link rel="stylesheet" href="/styles.css?v=20261125j">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -77,7 +77,7 @@
       </a>
       <nav class="nav__links" aria-label="Secciones">
         <a href="#visita">Horario y dirección</a>
-        <a href="#comida">Alimentación</a>
+        <a href="#comida">Tienda</a>
         <a href="#peluqueria">Peluquería</a>
       </nav>
       <a class="btn btn--small" href="tel:+34679465981">Llamar</a>
@@ -91,7 +91,7 @@
         <div class="hero__copy" data-enter>
           <p class="hero__kicker">Calle Soberanía, 15 · Local 4 · Galapagar</p>
           <h1 id="hero-title">Tienda de animales y peluquería canina en Galapagar</h1>
-          <p class="hero__sub">Alimentación y complementos para perros, gatos y otras mascotas, y peluquería canina con cita previa.</p>
+          <p class="hero__sub">Tienda especializada en alimentación animal, enfocada en el bienestar de tu peludo.</p>
           <div class="hero__actions">
             <a class="btn" href="https://wa.me/34676715980?text=Hola%2C%20quer%C3%ADa%20pedir%20cita%20en%20la%20peluquer%C3%ADa" target="_blank" rel="noopener">Reservar cita por WhatsApp</a>
             <a class="link link--light" href="#visita">Ver horario <span aria-hidden="true">→</span></a>
@@ -186,6 +186,17 @@
             </ul>
           </article>
         </div>
+        <div class="extras">
+          <div class="extras__icons" aria-hidden="true">
+            <span class="tile__icon"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="23" fill="#FCBC1E" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M15 17c12 7 12 23 0 30M49 17c-12 7-12 23 0 30" fill="none" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+            <span class="tile__icon"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="25" rx="23" ry="13" fill="none" stroke="#212227" stroke-width="11"/><ellipse cx="32" cy="25" rx="23" ry="13" fill="none" stroke="#E0626B" stroke-width="5"/><circle cx="32" cy="48" r="8.5" fill="#FCBC1E" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32" cy="48" r="2" fill="#212227"/></svg></span>
+            <span class="tile__icon"><svg viewBox="0 0 64 64"><path d="M19 27C8 23 6 8 17 7s16 12 8 19c-8 8-9 22 5 24 10 1 14-5 17-9" fill="none" stroke="#212227" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 27C8 23 6 8 17 7s16 12 8 19c-8 8-9 22 5 24 10 1 14-5 17-9" fill="none" stroke="#004AAD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="43" y="30" width="12" height="17" rx="6" transform="rotate(40 49 38.5)" fill="#FCBC1E" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+          </div>
+          <div>
+            <h3>Y para jugar y pasear</h3>
+            <p>Juguetes, collares y correas para perros y gatos.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -231,11 +242,30 @@
       </div>
     </section>
 
+    <!-- 3c · REPARTO A DOMICILIO -->
+    <section class="delivery" id="domicilio" aria-labelledby="delivery-title">
+      <div class="wrap delivery__grid">
+        <span class="delivery__icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M5 15h34v31H5z" fill="#FCBC1E" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M39 25h11l9 11v10H39z" fill="#004AAD" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M44 30h5l5 6H44z" fill="#fff" stroke="#212227" stroke-width="2" stroke-linejoin="round"/><circle cx="17" cy="47" r="6.5" fill="#fff" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="48" cy="47" r="6.5" fill="#fff" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><g fill="#212227"><ellipse cx="22" cy="33" rx="5.5" ry="4.5"/><circle cx="14.5" cy="27" r="2.4"/><circle cx="19.5" cy="23" r="2.4"/><circle cx="25.5" cy="23" r="2.4"/><circle cx="30" cy="27" r="2.4"/></g></svg></span>
+        <div>
+          <h2 id="delivery-title">Te lo llevamos a casa</h2>
+          <p class="delivery__text">Servicio a domicilio de comida sin coste en Galapagar y Colmenarejo.</p>
+          <p class="delivery__note">Consulta las condiciones al hacer tu pedido.</p>
+        </div>
+        <div class="delivery__actions">
+          <a class="btn" href="https://wa.me/34676715980?text=Hola%2C%20quer%C3%ADa%20hacer%20un%20pedido%20de%20comida%20a%20domicilio" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <a class="btn btn--white" href="tel:+34679465981">Llamar a la tienda</a>
+        </div>
+      </div>
+    </section>
+
     <!-- 4 · PELUQUERÍA -->
     <section class="groom" id="peluqueria" aria-labelledby="groom-title">
       <div class="wrap groom__grid">
         <div class="groom__copy">
-          <h2 id="groom-title">Peluquería canina con cita</h2>
+          <div class="groom__head">
+            <span class="tile__icon groom__icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M22 41 46 6c4 5 3 11-1 16L29 45z" fill="#fff" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M42 41 18 6c-4 5-3 11 1 16l16 23z" fill="#fff" stroke="#212227" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="18" cy="49" r="9" fill="none" stroke="#212227" stroke-width="11"/><circle cx="46" cy="49" r="9" fill="none" stroke="#212227" stroke-width="11"/><circle cx="18" cy="49" r="9" fill="none" stroke="#FCBC1E" stroke-width="5"/><circle cx="46" cy="49" r="9" fill="none" stroke="#FCBC1E" stroke-width="5"/><circle cx="32" cy="29" r="3" fill="#212227"/></svg></span>
+            <h2 id="groom-title">Peluquería canina con cita</h2>
+          </div>
           <p class="lead">Tu perro sale limpio, con corte nuevo y las uñas a punto. Sin prisas, uno a uno.</p>
           <ul class="services">
             <li><span>Baño y secado</span><span class="muted">champú adecuado a su tipo de pelo</span></li>
@@ -259,7 +289,7 @@
         <img class="close__logo" src="assets/img/wordmark-1200.webp" srcset="assets/img/wordmark-640.webp 640w, assets/img/wordmark-1200.webp 1200w" sizes="(max-width: 767px) 90vw, 50vw" width="1200" height="456" alt="Hambrientos y Peludos" loading="lazy">
         <div class="close__copy">
           <h2 id="close-title">¿Se acaba el pienso?</h2>
-          <p>Dinos qué come tu peludo y te lo dejamos preparado para que solo tengas que pasar a recogerlo. Y si quieres probar otro, te aconsejamos.</p>
+          <p>Dinos qué come tu peludo y te lo dejamos preparado en tienda o te lo llevamos a casa. Y si quieres probar otro, te aconsejamos.</p>
           <a class="btn btn--blue" href="https://wa.me/34676715980?text=Hola%2C%20quer%C3%ADa%20encargar%20pienso%20para%20mi%20mascota" target="_blank" rel="noopener">Encargar por WhatsApp</a>
         </div>
       </div>
@@ -295,7 +325,7 @@
     <a class="btn" href="https://wa.me/34676715980" target="_blank" rel="noopener">WhatsApp</a>
   </nav>
 
-  <script src="/main.js?v=20261125i" defer></script>
+  <script src="/main.js?v=20261125j" defer></script>
   <!-- Cloudflare Web Analytics de la cuenta de la tienda (sin cookies) -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "dae4293ae5e044f9bc792343f0bebb86"}'></script>
 </body>
