@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.taste-skill/
+.dev.vars
+.env
+*.log
+.DS_Store
+Thumbs.db
